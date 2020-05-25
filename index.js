@@ -18,8 +18,8 @@ let SECRET;
 try {
   const { id, secret } = require('./secrets/spotify-credentials');
 
-  ID = "452ca20fa2494921a25584e67511ea4e";
-  SECRET = "29619f89ee94436c831ab12a227a18f7";
+  ID = id;
+  SECRET = secret;
 } catch (error) {
   ID = process.env.SPOTIFY_CLIENT_ID;
   SECRET = process.env.SPOTIFY_CLIENT_SECRET;
